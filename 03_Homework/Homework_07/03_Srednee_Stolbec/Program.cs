@@ -48,8 +48,9 @@ void SredneeStolbec(double [,] array)
         {
             sum += array[j, i];
         }
-        Console.SetCursorPosition(40,5+stolb);
-        Console.WriteLine($" Cреднее арифметическое столбца {stolb} = {sum / array.GetLength(1)} ");
+        sum = sum / array.GetLength(1);
+        sum = Math.Round(sum, 1);
+        Console.WriteLine($" Cреднее арифметическое столбца {stolb} = {sum} ");
         stolb++;
     }    
 }
