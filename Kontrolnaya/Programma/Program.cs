@@ -20,6 +20,8 @@ void Search(string[] arrayString)
     Console.WriteLine();
 }
 
-string[] arrayString = new string[10] {"hello", "2", "world", ":-)", "1234", "1567", "-2", "Russia", "Denmark", "Kazan"};
+Console.Clear();
+
+string[] arrayString = new string[10] {"hello", "2", "world", ":-)", "1234", "1567", "-2", "Хай", "Yo!", "Kazan"};
 
 Search(arrayString);
